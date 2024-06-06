@@ -10,6 +10,8 @@ This study explores three methods for predicting the depth of anesthesia: Analys
 ## Introduction
 This project explores three ML-based/Statistic methods for predicting the depth of anesthesia using EEG signals: Analysis of Variance (ANOVA), Machine Learning, and Machine Learning with additional parameters. The goal is to evaluate and compare these methods to figure out a cost-effective alternatives to DoA Monitoring.
 
+{%youtube Fl1E9MHZMEU %}
+
 ## Model Framework
 
 ### Preprocessing
@@ -75,12 +77,10 @@ We extract 3 type of features in total:
 - **Machine Learning (More Parameters)** 
     - We found that simply using bis data resulted in low accuracy, with less than 20%. Even when using spectrum-bis blurred values, the accuracy was only around 40% to 50%, indicating that these features may not provide meaningful predictions. Comparatively, although more features can improve accuracy, when comparing on a level basis (e.g., using only SampEn/Raw/FFT or combining two of them), using Raw data had the lowest accuracy among the three features. Additionally, we observed in the confusion matrix that the predicted values were mostly concentrated in the -1 to 1 range (safe range ±10). We attribute this to an overfitting model due to an excess of data in the normal range, causing the predictions to cluster in this area.
 - **ANOVA**
-    - High F-values and Low P-values: These results indicate that there are significant differences between BIS and EEG data segments. This suggests that the BIS and EEG data in these segments do not originate from the same distribution, reflecting different states or conditions.
-    - Similar State Identification: Segments with lower F-values show smaller differences, indicating they might reflect similar or identical conditions.
-    - The ANOVA analysis in this study was instrumental in determining whether there were significant differences between segments of BIS and EEG data. By using ANOVA, we were able to identify which segments reflect different states and which segments might represent similar conditions. This deeper understanding of the data can help in further studies and analyses of BIS and EEG characteristics.
+    - The results showed large F-values, meaning there is a significant difference between time domain EEG and bis. This could be our future work.
 
 ## Future Works
-When the F-value is smaller, it indicates that the trend of the bis data in this segment is closer to the trend of the eeg data in this segment. In other words, this segment is better, and perhaps extracting segments with smaller F-values and running models on them could yield better results.
+When the F-value is smaller, it indicates that the trend of the bis data in this segment is closer to the trend of the eeg data in this segment. In other words, this segment is better, and perhaps extracting segments with smaller F-values and running models on them could yield better results. We will further investigate in how high or low F-value between time/frequency domain EEG and bis affects the prediction rate.
 
 ## References
 * Liu, Q., Ma, L., Fan, S. Z., Abbod, M. F., & Shieh, J. S. (2018). Sample entropy analysis for the estimating depth of anaesthesia through human EEG signal at different levels of unconsciousness during surgeries. PeerJ, 6, e4817. https://doi.org/10.7717/peerj.4817
