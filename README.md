@@ -10,7 +10,7 @@ This study explores three methods for predicting the depth of anesthesia: Analys
 ## Introduction
 This project explores three ML-based/Statistic methods for predicting the depth of anesthesia using EEG signals: Analysis of Variance (ANOVA), Machine Learning, and Machine Learning with additional parameters. The goal is to evaluate and compare these methods to figure out a cost-effective alternatives to DoA Monitoring.
 
-{%youtube Fl1E9MHZMEU %}
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/Fl1E9MHZMEU/0.jpg)](https://youtu.be/Fl1E9MHZMEU)
 
 ## Model Framework
 
