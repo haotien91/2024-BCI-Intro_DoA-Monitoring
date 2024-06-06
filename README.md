@@ -5,7 +5,7 @@
 **Student Number:** 110030038, 110012013, 111090001
 
 ## Abstract
-This study explores three methods for predicting the depth of anesthesia: Analysis of Variance (ANOVA), Machine Learning (ML), and ML with additional parameters. Data preprocessing involved using ASR to remove noise, splitting data into 5-second samples, and extracting features: Spectrum-bis, FFT-EEG, and SampEn-EEG. ANOVA identified significant differences in EEG data segments. ML models, including SVM, Random Forest, and Gradient Boosting Machine (GBM), were used for prediction. Results showed that both Random Forest and GBM accurately predicted BIS values, with GBM demonstrating smaller MAPE and better performance. Using more parameters did not significantly improve accuracy, as features like spectrum-bis provided limited predictive power, and raw data showed the lowest accuracy. Overfitting was noted due to an excess of normal range data, clustering predictions in the safe range. This research contributes to developing efficient and economical DoA monitoring techniques.
+This study explores three methods for predicting the depth of anesthesia: Analysis of Variance (ANOVA), Machine Learning (ML), and ML with additional parameters. Data preprocessing involved using ASR to remove noise, splitting data into 5-second samples, and extracting features: Spectrum-bis, FFT-EEG, and SampEn-EEG. ANOVA identified significant differences in EEG data segments. ML models, including Random Forest, Gradient Boosting Machine (GBM) and Long-Short Term Model, were used for prediction. Results showed that both Random Forest and GBM accurately predicted BIS values, with GBM demonstrating smaller MAPE and better performance. Using more parameters did not significantly improve accuracy, as features like spectrum-bis provided limited predictive power, and raw data showed the lowest accuracy. Overfitting was noted due to an excess of normal range data, clustering predictions in the safe range. This research contributes to developing efficient and economical DoA monitoring techniques.
 
 ## Introduction
 This project explores three ML-based/Statistic methods for predicting the depth of anesthesia using EEG signals: Analysis of Variance (ANOVA), Machine Learning, and Machine Learning with additional parameters. The goal is to evaluate and compare these methods to figure out a cost-effective alternatives to DoA Monitoring.
@@ -35,7 +35,7 @@ We extract 3 type of features in total:
 #### Machine Learning
 ![image](https://hackmd.io/_uploads/HyphoN1H0.png)
 - **Input/Output Mechanisms:** Uses FFT-EEG from case1~case18 as training dataset and case19~21 as validation dataset, providing *"MAPE(Mean Absolute Percentage Error) as output"*.
-- **Machine Learning Models Utilized:** SVM, Random Forest, and Gradient Boosting Machine.
+- **Machine Learning Models Utilized:** Random Forest, GBM and LSTM.
 - **Validation:** Uses case22~24 as test dataset to calculate the MAPE.
 
 #### Machine Learning with additional features (SampEn, FFT)
