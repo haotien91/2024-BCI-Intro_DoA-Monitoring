@@ -1,0 +1,7 @@
+numpy
+scipy
+antropy
+h5py
+scikit-learn
+matplotlib
+joblib

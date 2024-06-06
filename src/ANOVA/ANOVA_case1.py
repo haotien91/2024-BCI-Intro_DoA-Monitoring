@@ -4,7 +4,7 @@ import pandas as pd
 from scipy.stats import f_oneway
 
 # 確認文件路徑
-file_path = '/Users/wenchienyi/Desktop/BCI course/BIS_data/case1.mat'
+file_path = '../../resources/raw_data/case1.mat'
 
 # 讀取Matlab v7.3 .mat檔案
 with h5py.File(file_path, 'r') as f:
