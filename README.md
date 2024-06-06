@@ -36,13 +36,13 @@ We extract 3 type of features in total:
 ![image](https://hackmd.io/_uploads/HyphoN1H0.png)
 - **Input/Output Mechanisms:** Uses FFT-EEG from case1~case18 as training dataset and case19~21 as validation dataset, providing *"MAPE(Mean Absolute Percentage Error) as output"*.
 - **Machine Learning Models Utilized:** Random Forest, GBM and LSTM.
-- **Validation:** Uses case22~24 as test dataset to calculate the MAPE.
+- **Testing:** Uses case22~24 as test dataset to calculate the MAPE.
 
 #### Machine Learning with additional features (SampEn, FFT)
 ![image](https://hackmd.io/_uploads/ryZjSUJBC.png)
 - **Input/Output Mechanisms:** Using 80% of FFT-EEG, Raw-EEG, and SampEn-EEG (a total of 6 permutations) to predict Spectrum-bis (because we found that predicting the original bis had poor accuracy), and outputting the *"True-bis vs. Predicted-bis plot against the Sample index"* and the *"confusion matrix"*.
 - **Machine Learning Models Utilized:** Random Forest only.
-- **Validation:** Using 20% of Spectrum-bis to validate the accuracy.
+- **Testing:** Using 20% of Spectrum-bis to test the accuracy.
 
 ## Addition
 ### ANOVA
