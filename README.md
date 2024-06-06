@@ -1,7 +1,7 @@
 # Exploring Cost-Effective Alternatives to Depth of Anesthesia Monitoring
  
 ## Author
-**Name:** Hao-Tien Yu, Guan-Yu Chen, Chien-Yi Wen  
+**Name:** Hao-Tien Yu, Kuan-Yu Chen, Chien-Yi Wen  
 **Student Number:** 110030038, 110012013, 111090001
 
 ## Abstract
