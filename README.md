@@ -4,13 +4,13 @@
 **Name:** Hao-Tien Yu, Kuan-Yu Chen, Chien-Yi Wen  
 **Student Number:** 110030038, 110012013, 111090001
 
+**[For brief Introduction in 2 minutes, please refer to our presentation](https://youtu.be/Fl1E9MHZMEU)**
+
 ## Abstract
 This study explores three methods for predicting the depth of anesthesia: Analysis of Variance (ANOVA), Machine Learning (ML), and ML with additional parameters. Data preprocessing involved using ASR to remove noise, splitting data into 5-second samples, and extracting features: Spectrum-bis, FFT-EEG, and SampEn-EEG. ANOVA identified significant differences in EEG data segments. ML models, including Random Forest, Gradient Boosting Machine (GBM) and Long-Short Term Model, were used for prediction. Results showed that both Random Forest and GBM accurately predicted BIS values, with GBM demonstrating smaller MAPE and better performance. Using more parameters did not significantly improve accuracy, as features like spectrum-bis provided limited predictive power, and raw data showed the lowest accuracy. Overfitting was noted due to an excess of normal range data, clustering predictions in the safe range. This research contributes to developing efficient and economical DoA monitoring techniques.
 
 ## Introduction
 This project explores three ML-based/Statistic methods for predicting the depth of anesthesia using EEG signals: Analysis of Variance (ANOVA), Machine Learning, and Machine Learning with additional parameters. The goal is to evaluate and compare these methods to figure out a cost-effective alternatives to DoA Monitoring.
-
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/Fl1E9MHZMEU/0.jpg)](https://youtu.be/Fl1E9MHZMEU)
 
 ## Model Framework
 
