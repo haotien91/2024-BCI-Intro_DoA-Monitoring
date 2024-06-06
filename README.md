@@ -34,9 +34,9 @@ We extract 3 type of features in total:
 
 #### Machine Learning
 ![image](https://hackmd.io/_uploads/HyphoN1H0.png)
-- **Input/Output Mechanisms:** Uses FFT-EEG from case1~case18 as training dataset and case19~21 as validation dataset, providing *"MAPE(Mean Absolute Percentage Error) as output"*.
+- **Input/Output Mechanisms:** Uses FFT-EEG from case1-case18 as training dataset and case19-21 as validation dataset, providing *"MAPE(Mean Absolute Percentage Error) as output"*.
 - **Machine Learning Models Utilized:** Random Forest, GBM and LSTM.
-- **Testing:** Uses case22~24 as test dataset to calculate the MAPE.
+- **Testing:** Uses case22-24 as test dataset to calculate the MAPE.
 
 #### Machine Learning with additional features (SampEn, FFT)
 ![image](https://hackmd.io/_uploads/ryZjSUJBC.png)
@@ -66,7 +66,7 @@ We extract 3 type of features in total:
         - Use `python XXX.py` to execute it. You don't need to change the directroy in the program
     * ANOVA
         - Open your IDE
-        - Use `python ANOVA_case1.py` to execute it. You can change to any case from case1~case24 in the directory
+        - Use `python ANOVA_case1.py` to execute it. You can change to any case from case1-case24 in the directory
 
 
 ## Results
