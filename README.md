@@ -69,14 +69,15 @@ We extract 3 type of features in total:
 
 
 ## Results
-- **ANOVA**
-    - High F-values and Low P-values: These results indicate that there are significant differences between BIS and EEG data segments. This suggests that the BIS and EEG data in these segments do not originate from the same distribution, reflecting different states or conditions.
-    - Similar State Identification: Segments with lower F-values show smaller differences, indicating they might reflect similar or identical conditions.
-    - The ANOVA analysis in this study was instrumental in determining whether there were significant differences between segments of BIS and EEG data. By using ANOVA, we were able to identify which segments reflect different states and which segments might represent similar conditions. This deeper understanding of the data can help in further studies and analyses of BIS and EEG characteristics.
 - **Machine Learning** 
     - Random forest and gradient boosting machine both show generally correct trends in predicting BIS values. However, the gradient boosting machine has larger fluctuations in the peak regions, closer to the true BIS values, resulting in a smaller MAPE. We think the gradient boosting machine should be used to predict BIS values, as a smaller MAPE indicates better model performance.
 - **Machine Learning (More Parameters)** 
     - We found that simply using bis data resulted in low accuracy, with less than 20%. Even when using spectrum-bis blurred values, the accuracy was only around 40% to 50%, indicating that these features may not provide meaningful predictions. Comparatively, although more features can improve accuracy, when comparing on a level basis (e.g., using only SampEn/Raw/FFT or combining two of them), using Raw data had the lowest accuracy among the three features. Additionally, we observed in the confusion matrix that the predicted values were mostly concentrated in the -1 to 1 range (safe range ±10). We attribute this to an overfitting model due to an excess of data in the normal range, causing the predictions to cluster in this area.
+- **ANOVA**
+    - High F-values and Low P-values: These results indicate that there are significant differences between BIS and EEG data segments. This suggests that the BIS and EEG data in these segments do not originate from the same distribution, reflecting different states or conditions.
+    - Similar State Identification: Segments with lower F-values show smaller differences, indicating they might reflect similar or identical conditions.
+    - The ANOVA analysis in this study was instrumental in determining whether there were significant differences between segments of BIS and EEG data. By using ANOVA, we were able to identify which segments reflect different states and which segments might represent similar conditions. This deeper understanding of the data can help in further studies and analyses of BIS and EEG characteristics.
+
 
 ## References
 * Liu, Q., Ma, L., Fan, S. Z., Abbod, M. F., & Shieh, J. S. (2018). Sample entropy analysis for the estimating depth of anaesthesia through human EEG signal at different levels of unconsciousness during surgeries. PeerJ, 6, e4817. https://doi.org/10.7717/peerj.4817
