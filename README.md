@@ -60,7 +60,8 @@ We extract 3 type of features in total:
         - Open your matlab.
         - Change your directory in the .m file
         - Execute
-    * Machine Learning:
+        - Notice: The LSTM.py is executed on Google Colab, please clone this repo and use T4 GPU to execute it.
+    * Machine Learning (More parameter):
         - Open your IDE
         - Use `python XXX.py` to execute it. You don't need to change the directroy in the program
     * ANOVA
@@ -78,6 +79,8 @@ We extract 3 type of features in total:
     - Similar State Identification: Segments with lower F-values show smaller differences, indicating they might reflect similar or identical conditions.
     - The ANOVA analysis in this study was instrumental in determining whether there were significant differences between segments of BIS and EEG data. By using ANOVA, we were able to identify which segments reflect different states and which segments might represent similar conditions. This deeper understanding of the data can help in further studies and analyses of BIS and EEG characteristics.
 
+## Future Works
+When the F-value is smaller, it indicates that the trend of the bis data in this segment is closer to the trend of the eeg data in this segment. In other words, this segment is better, and perhaps extracting segments with smaller F-values and running models on them could yield better results.
 
 ## References
 * Liu, Q., Ma, L., Fan, S. Z., Abbod, M. F., & Shieh, J. S. (2018). Sample entropy analysis for the estimating depth of anaesthesia through human EEG signal at different levels of unconsciousness during surgeries. PeerJ, 6, e4817. https://doi.org/10.7717/peerj.4817
